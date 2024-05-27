@@ -53,7 +53,7 @@ def training(
     # Training of M256 model
     logger.info("[cyan]Training M256 Model ... [/]")
     cdn256 = Scaden(
-        model_dir=model_dir + "/m256",
+        model_dir=model_dir + "/m256.keras",
         model_name="m256",
         batch_size=batch_size,
         learning_rate=learning_rate,
@@ -68,7 +68,7 @@ def training(
     # Training of M512 model
     logger.info("[cyan]Training M512 Model ... [/]")
     cdn512 = Scaden(
-        model_dir=model_dir + "/m512",
+        model_dir=model_dir + "/m512.keras",
         model_name="m512",
         batch_size=batch_size,
         learning_rate=learning_rate,
@@ -83,7 +83,7 @@ def training(
     # Training of M1024 model
     logger.info("[cyan]Training M1024 Model ... [/]")
     cdn1024 = Scaden(
-        model_dir=model_dir + "/m1024",
+        model_dir=model_dir + "/m1024.keras",
         model_name="m1024",
         batch_size=batch_size,
         learning_rate=learning_rate,
