@@ -329,8 +329,7 @@ class Scaden(object):
                     gc.collect()
 
         # Save the trained model
-        os.makedirs(self.model_dir, exist_ok=True)
-        self.model.save(self.model_dir + "model.keras")
+        self.model.save(self.model_dir)
         pd.DataFrame(self.labels).to_csv(
             os.path.join(self.model_dir, "celltypes.txt"), sep="\t"
         )
